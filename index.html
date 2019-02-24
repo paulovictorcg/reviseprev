@@ -25,12 +25,37 @@
   <!-- Custom styles for this template -->
   <link href="css/freelancer.css" rel="stylesheet">
 
-
+<style>
+#navbarResponsive > ul > li:nth-child(3) > a {
+  margin-top: -5px !important;
+}
+#mainNav{
+  height: 15%;
+}
+</style>
 
 </head>
 
 <body id="page-top">
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Por Favor, Aguarde</h5>
+              <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body">
+              Procesando...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Pronto</button>
+            </div>
+          </div>
+        </div>
+      </div>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
     <div class="container">
@@ -41,137 +66,22 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+   
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#sobre">sobre</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#sobre"> <img src="reviseprev.jpg" width="96px" height="96px" /></a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Header -->
-  <!-- <header class="masthead bg-primary text-white text-center">
-    <div class="container">
-      <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
-      <h1 class="text-uppercase mb-0">RevisePrev</h1>
-      <hr class="star-light">
-      <h2 class="font-weight-light mb-0">REVISE seu calculo de aposentadoria e TRANSFORME a sua VIDA!</h2>
-    </div>
-  </header> -->
-
-  <!-- Portfolio Grid Section -->
-  <!-- <section class="portfolio" id="portfolio">
-    <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Insira Seus Dados</h2>
-      <hr class="star-dark mb-5">
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/circus.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/game.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/safe.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- About Section -->
-  <!-- <section class="bg-primary text-white mb-0" id="sobre">
-    <div class="container">
-      <h2 class="text-center text-uppercase text-white">sobre nós</h2>
-      <hr class="star-light mb-5">
-      <div class="row">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead"> A REVISEPREV é uma plataforma jurídica criada para revisar seu calculo previdenciário de forma simples e GRATUITA para que você descubra se esta perdendo dinheiro! 
-        
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p class="lead">Mesmo contribuindo a vida inteira, você pode estar vivendo com  muito menos do que você MERECE e nem sabe disso!
-            </p>
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p>
-            Você está satisfeito com o valor que recebe de aposentadoria? 
-            
-            Você sabe como revisar seu cálculo para aumentar o valor da sua aposentadoria?
-            
-            Se a resposta para qualquer uma dessas perguntas foi NÃO, nós podemos ter a solução para você!
-          </p>
-        </div>
-        
-      </div>
-      <div class="text-center mt-4">
-        <a class="btn btn-xl btn-outline-light" href="#">
-          <i class="fas fa-download mr-2"></i>
-          Download Now!
-        </a>
-      </div>
-    </div>
-  </section> -->
+ 
 
   <!-- Contact Section -->
   <section id="contact">
     <div class="container" >
+      <h2 class="text-center">
+     
       <h2 class="text-center text-uppercase text-secondary mb-0">Cadastre-se</h2>
       <hr class="star-dark mb-5">
       <div class="row" >
@@ -183,151 +93,50 @@
         overflow: hidden;
       }
       
-      .tab-pane {
-       
-      }
-      
-      #tab1 {
-        /* background: #dddddd; */
-      }
-      
-      #tab2 {
-       
-      }
-      
-      #tab3 {
-       
-      }
-      
-      #tab4 {
-       
-      }
+
           </style>
        
           </head>
       <body>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-      
-      <div class="tabs-animated">
-      
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">1 de 6 - Seu nome completo</a></li>
-          <li role="presentation"><a href="#tab2" id="cu" aria-controls="tab2" role="tab" data-toggle="tab">2 de 6 - Insira os números de seu CPF</a></li>
-          <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">3 de 6 - Insira seu nascimento</a></li>
-          <li role="presentation"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">4 de 6 - Insira seu CNIS</a></li>
-        </ul>
-      
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <div role="tabpanel" class="tab-pane fade in active" id="tab1">
-              
-                  <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                          <div class="control-group" style="margin-bottom: 10px;">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                              <label>Nome</label>
-                              <input class="form-control" id="name" type="text" placeholder="Nome" required="required" data-validation-required-message="Seu nome por favor.">
-                              <p class="help-block text-danger"></p>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                        
-                              <a href="#tab2" onclick="proximaAba(1)"  class="btn btn-primary btn-xl"  aria-controls="tab1" role="tab" data-toggle="tab">Próximo</a>
-                          </div>
-                        </form>
-      
-          </div>
-          <div role="tabpanel" class="tab-pane fade" id="tab2">
-              <div class="control-group" style="margin-bottom: 10px;">
-                  <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                    <label>Nome</label>
-                    <input class="form-control" id="name" type="text" placeholder="CPF" required="required" data-validation-required-message="Seu nome por favor.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="form-group">
-              
-                    <a href="#tab3" onclick="proximaAba(2)"  class="btn btn-primary btn-xl"  aria-controls="tab2" role="tab" data-toggle="tab">Próximo</a>
-                </div>
-          </div>
-          <div role="tabpanel" class="tab-pane fade" id="tab3">Tab 3</div>
-          <div role="tabpanel" class="tab-pane fade" id="tab4">Tab 4</div>
-        </div>
-      
-      </div>
-
-          <script type="text/javascript">
-              $('a[data-toggle="tab"]').on('hide.bs.tab', function (e) {
-          var $old_tab = $($(e.target).attr("href"));
-          var $new_tab = $($(e.relatedTarget).attr("href"));
-      
-          if($new_tab.index() < $old_tab.index()){
-            $old_tab.css('position', 'relative').css("right", "0").show();
-            $old_tab.animate({"right":"-100%"}, 300, function () {
-              $old_tab.css("right", 0).removeAttr("style");
-            });
-          }
-          else {
-            $old_tab.css('position', 'relative').css("left", "0").show();
-            $old_tab.animate({"left":"-100%"}, 300, function () {
-              $old_tab.css("left", 0).removeAttr("style");
-            });
-          }
-        });
-      
-        $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
-          var $new_tab = $($(e.target).attr("href"));
-          var $old_tab = $($(e.relatedTarget).attr("href"));
-      
-          if($new_tab.index() > $old_tab.index()){
-            $new_tab.css('position', 'relative').css("right", "-2500px");
-            $new_tab.animate({"right":"0"}, 500);
-          }
-          else {
-            $new_tab.css('position', 'relative').css("left", "-2500px");
-            $new_tab.animate({"left":"0"}, 500);
-          }
-        });
-      
-        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-          // your code on active tab shown
          
-        });
-        function proximaAba(e) {
-          var $new_tab = $("#tab" +(e+1));
-          var $old_tab = $('#tab'+(e));
-          $new_tab.toggleClass("active");
-          $old_tab.toggleClass("active");
-          
-          $("[href='#tab" +(e+1)+"']").parent('li').toggleClass("active");
-          $("[href='#tab" +(e)+"']").parent('li').toggleClass("active");
-          
-
-          $("[href='#tab" +(e+1)+"']").attr('aria-selected', function(index, attr){
-            return attr == 'true' ? 'false' : 'true';
-         });
-         $("[href='#tab" +(e+1)+"']").attr('aria-selected', function(index, attr){
-            return attr == 'true' ? 'false' : 'true';
-         });
-        }
-          </script>
           <!-- FECHOU PORRAAAAAAAAAAAAA -->
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
           <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-          <!-- <form name="sentMessage" id="contactForm" novalidate="novalidate">
+          <form name="sentMessage" id="contactForm" novalidate="novalidate">
             <div class="control-group" style="margin-bottom: 10px;">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Nome</label>
                 <input class="form-control" id="name" type="text" placeholder="Nome" required="required" data-validation-required-message="Seu nome por favor.">
                 <p class="help-block text-danger"></p>
               </div>
+            
+            </div>
+            <div class="control-group" style="margin-bottom: 10px;">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>C.P.F</label>
+                  <input class="form-control" id="cpf" type="text" placeholder="CPF" required="required" data-validation-required-message="Seu cpf por favor.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              
+            </div>
+            <div class="control-group" style="margin-bottom: 10px;">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Telefone</label>
+                  <input class="form-control" id="tel" type="text" placeholder="Telefone" required="required" data-validation-required-message="Seu telefone por favor.">
+                  <p class="help-block text-danger"></p>
+                </div>
+            </div>
+            <div class="control-group" style="margin-bottom: 10px;">
+                <div class="form-group  controls mb-0 pb-2">
+                  <label style="font-size: 1.5em; color: #6c757d;">CNIS</label>
+                  <input class="form-control" id="cnis" style="border: initial; border-bottom: 1px solid #ced4da !important" type="file" placeholder="CNIS" required="required" data-validation-required-message="Seu CNIS por favor.">
+                  <p class="help-block text-danger"></p>
+                </div>
             </div>
             <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+              <button type="button" data-backdrop="static" class="btn btn-primary btn-xl" id="sendMessageButton" data-toggle="modal" data-target="#exampleModal">Enviar</button>
             </div>
-          </form> -->
+          </form>
         </div>
       </div>
     </div>
@@ -338,44 +147,31 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Location</h4>
-          <p class="lead mb-0">2215 John Daniel Drive
-            <br>Clark, MO 65243</p>
+          <h4 class="text-uppercase mb-4">RevisePrev</h4>
+          <p class="lead mb-0">Rua dos Aimorés, 1451 
+            <br> Lourdes, Belo Horizonte - MG</p>
         </div>
         <div class="col-md-4 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Around the Web</h4>
+          <h4 class="text-uppercase mb-4">Redes Sociais</h4>
           <ul class="list-inline mb-0">
+
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                <i class="fab fa-fw fa-facebook-f"></i>
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/_reviseprev_/">
+                <i class="fab fa-instagram"></i>
               </a>
             </li>
+            
             <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                <i class="fab fa-fw fa-google-plus-g"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                <i class="fab fa-fw fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="http://www.linkedin.com/in/reviseprev">
                 <i class="fab fa-fw fa-linkedin-in"></i>
               </a>
             </li>
-            <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                <i class="fab fa-fw fa-dribbble"></i>
-              </a>
-            </li>
+
           </ul>
         </div>
         <div class="col-md-4">
-          <h4 class="text-uppercase mb-4">About Freelancer</h4>
-          <p class="lead mb-0">Freelance is a free to use, open source Bootstrap theme created by
-            <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+          <h4 class="text-uppercase mb-4">Sobre RevisePrev</h4>
+          <p class="lead mb-0">A REVISEPREV é uma plataforma jurídica criada para revisar seu calculo previdenciário de forma simples e GRATUITA para que você descubra se esta perdendo dinheiro</p>
         </div>
       </div>
     </div>
@@ -383,7 +179,7 @@
 
   <div class="copyright py-4 text-center text-white">
     <div class="container">
-      <small>Copyright &copy; Your Website 2019</small>
+      <small>Copyright &copy; RevisePrev 2019</small>
     </div>
   </div>
 
@@ -441,91 +237,7 @@
   </div>
 
   <!-- Portfolio Modal 3 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 4 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/game.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 5 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/safe.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 6 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-            <hr class="star-dark mb-5">
-            <img class="img-fluid mb-5" src="img/portfolio/submarine.png" alt="">
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
+ 
   </div>
 
   <!-- Bootstrap core JavaScript -->
